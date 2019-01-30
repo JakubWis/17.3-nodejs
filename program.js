@@ -12,7 +12,7 @@ process.stdin.on('readable', function() {
 	    	console.log(process.versions);
 	    	process.exit();
     	case 'lang': 
-	    	console.log(process.env);
+	    	console.log(process.env.LANG);
 	    	process.exit();
     	default: 
     		process.stderr.write('Wrong instruction. Try again: ');
